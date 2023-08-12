@@ -18,7 +18,7 @@ export default function HeroSection() {
           </Breadcrumb.Item>
         </Breadcrumb>
         <Row align={"middle"}>
-          <Col span={11}>
+          <Col xxl={11} span={24}>
             <Typography.Title className="h1 hero_title mb-6">
               <mark className="text-white">React</mark> Native Development
               Company
@@ -40,19 +40,21 @@ export default function HeroSection() {
               ))}
             </Space>
           </Col>
-          <Col span={12}>
+          <Col xxl={12} span={0}>
             <CustomHeroShapes />
           </Col>
         </Row>
-        <div className="rounded-3xl bg-white shadow-[0px_16px_32px_-8px_#18231d1c] px-[18px] py-8 flex items-center gap-5">
-          <div className="w-[85px] h-[76px]">
-            <img src={GroupShape} className="w-full h-full object-cover" />
+        <div className="py-20">
+          <div className="rounded-3xl bg-white shadow-[0px_16px_32px_-8px_#18231d1c] px-[18px] py-8 flex items-center gap-5">
+            <div className="w-[85px] h-[76px]">
+              <img src={GroupShape} className="w-full h-full object-cover" />
+            </div>
+            <p className="body-lg font-bold">
+              Take advantage of our expertise in React Native development and
+              get the desired opportunity to hit both iOS and Android markets
+              with cost-effective native mobile apps.
+            </p>
           </div>
-          <p className="body-lg font-bold">
-            Take advantage of our expertise in React Native development and get
-            the desired opportunity to hit both iOS and Android markets with
-            cost-effective native mobile apps.
-          </p>
         </div>
       </div>
     </section>

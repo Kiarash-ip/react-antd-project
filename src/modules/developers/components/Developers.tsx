@@ -15,10 +15,10 @@ export default function Developers() {
         dedicated team will start working on your project with full
         responsibility so that you can receive an outstanding software solution.
       </p>
-      <Row gutter={20}>
+      <Row gutter={[20, 20]}>
         {developers_information.map((item) => {
           return (
-            <Col span={8} key={item.id}>
+            <Col xl={8} md={12} span={24} key={item.id}>
               <InfoCard
                 avatar_src={item.avatar_src}
                 fullName={item.fullName}

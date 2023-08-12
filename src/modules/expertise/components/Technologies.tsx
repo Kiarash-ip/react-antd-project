@@ -7,7 +7,7 @@ export default function Technologies() {
   const [activeField, setActiveField] = useState<number>(0);
   return (
     <div className="">
-      <div className="flex justify-center items-center gap-4 mb-16">
+      <div className="flex flex-wrap justify-center items-center gap-4 mb-16">
         {expertise_fields.map((field, index) => {
           return (
             <Button

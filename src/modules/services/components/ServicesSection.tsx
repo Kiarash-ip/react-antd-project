@@ -23,7 +23,7 @@ export default function ServicesSection() {
       <Row gutter={[16, 80]}>
         {services_data.map((service, index) => {
           return (
-            <Col span={8} key={service.title}>
+            <Col xxl={8} xl={12} span={24} key={service.title}>
               <ServiecCart
                 image_src={service.image_src}
                 title={service.title}

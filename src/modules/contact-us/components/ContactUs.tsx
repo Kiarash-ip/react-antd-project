@@ -47,8 +47,8 @@ type FieldType = {
 export default function ContactUs() {
   return (
     <section className="custom-container py-20">
-      <Row gutter={20}>
-        <Col span={12}>
+      <Row gutter={[20, 20]}>
+        <Col lg={12} span={24}>
           <h3 className="h2 text-left mb-4">Contact us</h3>
           <p className="body-xl text-left max-w-[640px] mb-12">
             If you are looking for a technology partner for your business, fill
@@ -106,7 +106,7 @@ export default function ContactUs() {
             </Form.Item>
           </Form>
         </Col>
-        <Col span={12}>
+        <Col lg={12} span={24}>
           <Space className="w-full" direction="vertical" size={"middle"}>
             {links_data.map((link) => {
               return (

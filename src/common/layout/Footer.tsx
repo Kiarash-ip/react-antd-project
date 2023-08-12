@@ -85,9 +85,10 @@ export default function FooterComp() {
           className="mb-9"
           alt="logo"
         />
-        <Space size={"large"} className="w-full justify-between">
+        <Space size={"large"} className="w-full justify-between flex-wrap">
           {footer_links.map((link) => (
             <Button
+              key={link.id}
               type="link"
               className="body-lg text-white hover:!text-primary"
             >
@@ -111,9 +112,11 @@ export default function FooterComp() {
               Licenses
             </Button>
           </Space>
-          <Space size={40}>
+          <Space className="flex-wrap" size={40}>
             {social_links.map((social) => {
-              return <Image src={social.icon_src} height={32} />;
+              return (
+                <Image key={social.id} src={social.icon_src} height={32} />
+              );
             })}
           </Space>
         </div>
