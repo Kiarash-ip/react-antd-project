@@ -1,5 +1,6 @@
 import { Layout } from "antd";
 import HeaderComp from "./Header";
+import FooterComp from "./Footer";
 
 const { Content } = Layout;
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <Layout>
         <HeaderComp />
         <Content>{children}</Content>
+        <FooterComp />
       </Layout>
     </>
   );

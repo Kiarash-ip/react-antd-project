@@ -1,0 +1,28 @@
+.project-card {
+  & .ant-card-meta-title {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px !important;
+  }
+
+  & .ant-card-meta-description {
+    @apply text-caption;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: url(/public/svg/location.svg);
+    }
+  }
+}
